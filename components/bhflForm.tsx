@@ -28,7 +28,7 @@ export default function BfhlForm() {
                 return;
             }
 
-            if (!parsedInput.data.every(item => typeof item === 'string')) {
+            if (!parsedInput.data.every(item: any => typeof item === 'string')) {
                 setError('Invalid format. "data" must be an array of strings.');
                 return;
             }
